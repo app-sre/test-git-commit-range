@@ -9,6 +9,6 @@ COMMIT_RANGE="$GIT_PREVIOUS_COMMIT...$GIT_COMMIT"
 
 echo "COMMIT_RANGE=$COMMIT_RANGE"
 
-echo "MANUAL_COMMIT_RANGE=$(git merge-base HEAD master)...$(git rev-parse HEAD)"
+echo "MANUAL_COMMIT_RANGE=$(git merge-base HEAD remotes/origin/master)...$(git rev-parse HEAD)"
 
 git diff --name-only "$COMMIT_RANGE"
