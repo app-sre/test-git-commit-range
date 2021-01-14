@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -x
+
 echo GIT_PREVIOUS_COMMIT=$GIT_PREVIOUS_COMMIT
 echo GIT_COMMIT=$GIT_COMMIT
 
